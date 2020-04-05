@@ -10,10 +10,41 @@ import HomePage from "../src/pages/HomePage";
 import AboutUsPage from "../src/pages/AboutUsPage";
 import ContactUsPage from "../src/pages/ContactUsPage";
 
+
+import Button from '@material-ui/core/Button';
+import 'typeface-roboto';
+import AppBar from '@material-ui/core/AppBar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
+import HomeIcon from '@material-ui/icons/Home';
+
 class App extends Component {
   render() {
     return (
       <Router>
+        <Link>
+          <NavLink exact to="/" style={{ color: 'white', textDecoration: 'none' }} activeStyle={{ color: 'white', textDecoration: 'none' }}>Home</NavLink>
+        </Link>
+        <Link>
+          <NavLink exact to="/AboutUs" style={{ color: 'white', textDecoration: 'none' }} activeStyle={{ color: 'white', textDecoration: 'none' }}>AboutUs</NavLink>
+        </Link>
+        <Link>
+          <NavLink exact to="/ContactUs" style={{ color: 'white', textDecoration: 'none' }} activeStyle={{ color: 'white', textDecoration: 'none' }}>ContactUs</NavLink>
+        </Link>
+        
+
+
+
+
+
+
+
+
         <div>
           <div className="App">
             <div className="App-header">
